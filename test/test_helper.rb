@@ -4,6 +4,8 @@ require 'rails/test_help'
 require "minitest/reporters"
 Minitest::Reporters.use!
 
+ActiveRecord::Migration.maintain_test_schema! if defined?(ActiveRecord::Migration)
+
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
