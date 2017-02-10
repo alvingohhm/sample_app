@@ -1,0 +1,6 @@
+namespace :db do
+  desc 'Additional migrate task that creates the diagram'
+  task :migrate do
+    `rake db:migrate RAILS_ENV=test`
+  end
+end
