@@ -14,7 +14,7 @@ gem 'bcrypt',      '3.1.11', :require => "bcrypt"
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'
-  gem 'byebug',  '9.0.0', platform: :mri
+  gem 'byebug',  '9.0.6'
 end
 
 group :development do
