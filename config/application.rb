@@ -13,5 +13,7 @@ module SampleApp
     # -- all .rb files in that directory are automatically loaded.
     config.time_zone = 'Singapore'
     config.active_record.default_timezone = :local
+    # Include the authenticity token in remote forms.
+    config.action_view.embed_authenticity_token_in_remote_forms = true
   end
 end
